@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import VehicleList from './Components/VehicleList';
 import TrafficLight from './Components/TrafficLight';
 
@@ -15,10 +15,6 @@ function App() {
   // const [traffic, setTraffic] = useState(['car', 'truck']);
 
 
-  useEffect(() => {
-    setLightColor;
-    
-  }, []);
   
   return (
     <div className="App">
