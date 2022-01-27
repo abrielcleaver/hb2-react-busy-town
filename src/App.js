@@ -10,7 +10,7 @@ function App() {
   // alienSize should be a number that starts out as 10
   // traffic is complicated. It should be an array of strings that starts out as ['car', 'truck']
   const [alienSize, setAlienSize] = useState(10);
-  // const [lizardSize, setLizardSize] = useState(10);
+  const [lizardSize, setLizardSize] = useState(10);
   const [lightColor, setLightColor] = useState('red');
   // const [traffic, setTraffic] = useState(['car', 'bus', 'truck', 'motorcycle']);
 
@@ -30,13 +30,13 @@ function App() {
           </div>
         </div>
         <div className="monster">
-          {/* the width of the lizard should be ten times whatever the alien size is in state */}
-          <img src="lizard.png" width={20} />
+          {/* the width of the lizard should be ten times whatever the lizard size is in state */}
+          <img src="lizard.png" width={10 * lizardSize} />
           <div className="buttons">
             {/* when you click this button, the lizard's size in state should go up by one */}
-            <button>Yegads! The lizard is ramping up to its final form!</button>
+            <button onClick={() => setLizardSize(lizardSize + 1)}>Yegads! The lizard is ramping up to its final form!</button>
             {/* when you click this button, the alien's size in state should go up by one */}
-            <button>Oh my! The lizard chomped down on the alien!</button>
+            <button onClick={() => setLizardSize(lizardSize - 1)}>Oh my! The lizard chomped down on the alien!</button>
           </div>
         </div>
       </div>
