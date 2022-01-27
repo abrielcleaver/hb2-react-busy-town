@@ -9,7 +9,16 @@ function App() {
   // lizardSize should be a number that starts out as 10
   // alienSize should be a number that starts out as 10
   // traffic is complicated. It should be an array of strings that starts out as ['car', 'truck']
- 
+  const [lightColor, setLightColor] = useState('red');
+  // const [lizardSize, setLizardSize] = useState(10);
+  // const [alienSize, setAlienSize] = useState(10);
+  // const [traffic, setTraffic] = useState(['car', 'truck']);
+
+
+  useEffect(() => {
+    setLightColor;
+    
+  }, []);
   
   return (
     <div className="App">
